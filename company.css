@@ -31,12 +31,12 @@ margin-left: 20px;
 }
 .navbar li{
     display: inline;
-    margin-right: 20px;
+    margin-right: 15px;
     
 
 }
 .navbar li:first-child{
-    margin-left: 20px;
+    margin-left: 15px;
 }
 .navbar a{
     color:black;
@@ -62,7 +62,7 @@ main{
   justify-content: center;
   background-color: #6c9ebd;
    color:rgb(182, 199, 212)9;
-    height: calc(100vh-60px);
+    height: calc(100vh);
     font-size: 2rem;
 }
 .main-container img{
@@ -86,6 +86,11 @@ main{
   }
   .courses{
       display: flex;
+  }
+  @media (max-width:600px){
+    .navbar a,.footer,.courses,.main-container,.navbar button{
+      flex-direction: column;
+    }
   }
   .course {
     width: 300px;
